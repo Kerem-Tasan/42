@@ -6,29 +6,33 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 16:54:22 by kerem             #+#    #+#             */
-/*   Updated: 2025/08/16 21:48:25 by marvin           ###   ########.fr       */
+/*   Updated: 2025/08/17 03:24:21 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stdlib.h>
 #include "push_swap.h"
 
 int main(int argc, char *argv[])
 {
- char *all_args;
+    char **all_args;
+    int i;
 
     if (argc < 2)
+        return (0);
+    // argümanların hepsini 2 boyutlu diziye atmaca    
+    all_args = ft_split(arguments(argc, argv), " ");
+    // 
+
+
+
+    //free
+    i = 0;
+    while (all_args[i])
     {
-        ft_printf("Kullanım: ./push_swap arg1 arg2 ...\n");
-        return 0;
+        free(all_args[i]);
+        i++;
     }
-
-    all_args = arguments(argc, argv);
-    ft_printf("Birleştirilmiş argümanlar: %s\n", all_args);
     free(all_args);
-
-    return 0;
+    return (0);
 }
-
-

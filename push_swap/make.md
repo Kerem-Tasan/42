@@ -1,1 +1,5 @@
-﻿argümanları kotnrol edip bir diziye atma 
+﻿argümanları kontrol edip bir diziye atma ✅
+
+fonksiyonlar ❌
+
+sort ❌
